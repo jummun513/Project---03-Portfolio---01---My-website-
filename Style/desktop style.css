@@ -1,0 +1,145 @@
+    
+/* header section start */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+  
+.navbar{    
+    background-image: linear-gradient( to left, #e0e0e0, #7CDCFF);
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 7px;
+    }
+
+.navbar .logo{
+        text-align: left;                      
+    }
+
+.navbar .title h1{
+    text-align: right;    
+}
+
+.navbar .menu{        
+        flex-direction: row;
+        justify-content: flex-end;                           
+    }
+
+.navbar .menu a{
+        margin: 33px 5px;
+        padding: 12px;
+    } 
+
+ /* header section ...................end................. */
+
+
+/* main sention start */
+
+        /* Profile start */
+
+.profile .top-weather-icon{
+    top: 40px;    
+    width: auto;
+    transition: width 2s, transform 2s;        
+}
+
+.profile .top-weather-icon:hover{   
+    width: 150px;    
+}
+
+.profile .bottom-weather-icon{    
+    width: auto;
+    transition: width 2s, transform 2s;        
+}
+
+.profile .bottom-weather-icon:hover{   
+    width: 150px;    
+}
+        /* ............Profile end ............*/
+
+
+        /* About section start */
+    
+.about img{
+    margin-top: 100px;
+    height: 270px;
+    width: 250px;
+}
+
+.about .bio{
+    text-align: left;
+}
+        /* ..........About section end......... */
+
+        
+        /* card-section start */
+
+.card-section{
+    padding: 1% 2%;
+}
+
+.card-section .common .card{   
+    margin: 15px;
+}
+
+        /* ..............card-section end........ */
+
+
+        /* achievement-contract part start */
+
+.achievement-contract .same{ 
+        border-bottom: none;
+}
+
+.achievement-contract .button{
+    position: relative;
+}
+
+.achievement-contract .button .social{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 220px;
+}
+
+         /* ..........achievement-contract part end......... */
+
+/* .main sention..................................... end................. */
+
+/* footer section start */
+
+.footer .menu{
+    margin: 15px 0px;
+    text-align: left;
+}
+
+.footer .menu a{
+    display: inline;
+    margin: 0px 10px;
+}
+
+.footer .desc{
+    margin: 0px 0px;    
+    text-align: right;
+}
+
+/* footer section end */
+
+.end{
+    width: 100%;
+    height: 0px;
+    background-color: none;
+}
+        

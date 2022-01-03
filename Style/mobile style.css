@@ -1,0 +1,559 @@
+
+/* header section start */
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;           
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background: rgb(255, 255, 255); 
+}
+
+[class*="col-"]{
+    float: left;           
+    }
+
+[class*="col-"]{
+    width: 100%;
+    }
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+    }
+
+.navbar{
+    background-image: linear-gradient( to top, #7CDCFF, #e0e0e0, #e0e0e0, #7CDCFF);    
+    padding: 20px;
+    text-align: center;
+    }
+
+.navbar .logo img{
+    height: 92px;
+    width: 92px;
+    margin-top: 10px;             
+    }
+    
+.navbar .title{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1rem;        
+    }
+
+.navbar .menu{
+    display: flex;
+    flex-direction: column;      
+    }
+
+.navbar .menu a{        
+        padding: 15px;
+        margin: 5px;        
+        border-radius: 7px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        background-color: #13B5F1;               
+    }
+
+.navbar .menu a:hover {
+        background: #FFD205;
+        border-radius: 7px;
+    }
+ 
+/* header section .....................end .........................*/
+
+
+
+
+/* main sention start */
+
+        /* Profile start */
+.profile{
+    padding: 100px 20px;
+    position: relative;    
+    }
+
+.profile img{
+    height: 100px;
+    width: 120px;    
+    }
+
+.profile .top-weather-icon{
+    position: absolute;
+    Right: 60px;    
+    top: 30px;
+    transition: transform 2s;        
+    }
+
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);    
+    }
+
+.profile .description{
+    padding: 50px 0px;
+    }
+
+.profile .description h2{
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 25px;    
+    }
+
+.profile .description p{
+    text-align: center;
+    line-height: 25px;    
+    width: 90%;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+    opacity: 0.6;    
+    }
+
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 40px;
+    bottom: 45px;
+    transition: transform 2s;        
+    }
+
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);    
+    }
+        /* ..............Profile end ..............*/
+
+
+        /* About section start */
+.about{
+    background-color: #13B5F1;
+    padding: 10px 20px;
+    font-family: 'sans-serif', 'Montserrat' ;
+    text-align: center;
+    }
+
+.about:hover{
+    animation-name: bg;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+
+@keyframes bg {
+    5%{
+        background-color: #13B5F1;
+    }
+    25%{
+        background-color: rgb(212, 17, 150);
+    }
+    50%{
+        background-color: rgb(17, 212, 40);        
+    }
+    75%{
+        background-color: rgb(212, 92, 17);        
+    }
+    }
+
+.about::after{
+    content: '';
+    display: table;
+    clear: both;
+    }
+
+.about h3{
+    text-align: center;
+    font-size: 24px;
+    }
+
+.about .stylish-hr{
+    border: 5px dotted black;
+    border-bottom: none;    
+    margin: 20px auto;
+    width: 80px;
+    }
+
+.about img{
+    height: 150px;
+    width: 135px;
+    border: 2px solid black;
+    border-radius: 50%; 
+    }
+
+.about hr{
+    border: 2px solid black;
+    border-bottom: none;
+    }
+
+.about a{
+    text-decoration: none;
+    }
+
+.about a:hover{
+    text-decoration: underline;
+    }
+
+.about button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: 1s;
+    }
+
+.about button:hover{
+    background-color: rgba(0, 0, 0, 0.883);
+    transform: scale(1.1);
+    }
+
+.about::after{
+    content: '';
+    display: table;
+    clear: both;
+    }
+        /* ................About section end.............. */
+
+
+        /* Card section start */
+.card-section{
+    padding: 1% 2%;
+}
+
+.card-section .common{
+    margin-top: 15px;
+}
+
+.card-section .common .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.6s;
+    height: 750px;
+}
+
+.card-section .common .card:hover{
+    box-shadow: 0px 3px 3px 3px black;
+    transform: scale(1.002);
+}
+
+.card-section .common .card .icon{
+    text-align: center;    
+}
+
+.card-section .common .card .icon img{
+    height: 80px;
+    width: 85px;
+    margin-top: 10px;
+    border: 5px solid yellow;
+    border-radius: 50%;
+    padding: 10px;    
+}
+
+.card-section .common .card .title h2{
+    text-align: center;
+    background-color: #616161;
+    padding: 10px;
+}
+
+.card-section .common .card .desc ol hr{
+    border: 2px solid white;
+    border-bottom: none;
+}
+
+.card-section .common .card .desc ol li a{
+    color: white;
+    text-decoration: none;
+}
+
+.card-section .common .card .desc ol li a:hover{
+    text-decoration: underline;
+    color: blue;    
+}
+
+.card-section::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+    /* skill-container */
+
+.card-section .skill .card .desc .skill-container{
+    padding-right: 45px;
+}
+
+.card-section .skill .card .desc .skill-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.card-section .skill .card .desc .skill-container li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(86, 86, 153, .5);
+    top: calc(100% + 5px);
+    left: 0px;
+    border-radius: 100px;
+}
+
+.card-section .skill .card .desc .skill-container li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 10px;
+    background-color: rgb(86, 86, 200);
+    top: calc(100% + 5px);
+    left: 0px;
+    border-radius: 100px;
+
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;    
+}
+
+.card-section .skill .card .desc .skill-container li.html::after{
+    animation-name: ht;
+}
+
+@keyframes ht{
+    to{
+        width: 95%;
+    }
+}
+
+.card-section .skill .card .desc .skill-container li.css::after{
+    animation-name: cs;
+}
+
+@keyframes cs{
+    to{
+        width: 90%;
+    }
+}
+
+.card-section .skill .card .desc .skill-container li.bootstrap::after{
+    animation-name: bt;
+}
+
+@keyframes bt{
+    to{
+        width: 75%;
+    }
+}
+
+.card-section .skill .card .desc .skill-container li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 45%;
+    }
+}
+
+.card-section .skill .card .desc .skill-container li.jquery::after{
+    animation-name: jq;
+}
+
+@keyframes jq{
+    to{
+        width: 95%;
+    }
+}
+
+.card-section .skill .card .desc .skill-container li.node::after{
+    animation-name: no;
+}
+
+@keyframes no{
+    to{
+        width: 55%;
+    }
+}
+
+.card-section .skill .card .desc .skill-container li.express::after{
+    animation-name: ex;
+}
+
+@keyframes ex{
+    to{
+        width: 75%;
+    }
+}
+
+.card-section .skill .card .desc .skill-container li.git::after{
+    animation-name: git;
+}
+
+@keyframes git{
+    to{
+        width: 45%;
+    }
+}
+
+.card-section .skill .card .desc .skill-container li.react::after{
+    animation-name: r;
+}
+
+@keyframes r{
+    to{
+        width: 85%;
+    }
+}
+
+        /* ..................Card section end....................... */
+
+
+        /* achievement-contract part start */
+
+.achievement-contract{
+    background-color: #13B5F1;
+    margin-top: 10px;
+}
+
+.achievement-contract .same{        
+    padding: 15px;
+    border-bottom: 2px solid black;
+}
+
+.achievement-contract .same h3{
+    text-align: center;
+}
+
+.achievement-contract .same hr{
+    border: 5px dotted black;
+    border-bottom: none;
+    width: 100px;    
+}
+
+.achievement-contract .achievement li{
+    text-align: justify;
+    list-style-position: inside;    
+}
+
+.achievement-contract .contract{
+    text-align: center;       
+}
+
+.achievement-contract .contract input, textarea{
+    text-align: center;
+    width: 90%;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.achievement-contract .contract button{
+    border: none;
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.8s;
+}
+
+.achievement-contract .contract button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    opacity: 0.9;
+}
+
+.achievement-contract .contract #send{
+    float: left;
+    margin-left: 28px;
+}
+.achievement-contract .contract #reset{
+    float: right;
+    margin-right: 28px;
+}
+
+.achievement-contract{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.achievement-contract .button .social{
+    text-align: center;
+}
+
+.achievement-contract .button .social .btnf, .btng, .btngt, .btnl, .btny, .btns, .btne, .btno {
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+    
+}
+
+.achievement-contract .button .social .btnf, .btng, .btngt, .btnl, .btny, .btns, .btne, .btno{
+    transition: 1s;
+}
+
+
+.achievement-contract .button .social .btnf:hover, .btng:hover, .btngt:hover, .btnl:hover, .btny:hover, .btns:hover, .btne:hover, .btno:hover{
+    transform: scale(1.1);
+    background-color: white;
+    opacity: 0.8;
+}
+
+         /* ......achievement-contract part end .............*/
+
+/*main sention .......................end.................... */
+
+/* footer section start */
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.footer .menu a{
+    display: block;
+    margin: 15px 0px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;    
+}
+
+.footer .menu a:hover{
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.footer .desc{
+    margin: 15px 0px;
+}
+
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* footer section .....................end....................... */
+
+.end{
+    width: 100%;
+    height: 20px;
+    background-color: #13B5F1;
+}
